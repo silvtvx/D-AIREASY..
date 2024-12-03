@@ -1,0 +1,256 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container centralizado */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0078d7;
+    width: 100%;
+    color: white;
+    padding: 15px 0;
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo h1 {
+    color: white;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-list li a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+
+.product-details img {
+    width: 400px;
+    height: 400px;
+}
+
+.product-details p {
+    padding-top: 40px;
+}
+.section {
+    padding: 20px 0px;
+    text-align: center;
+}
+h1 {
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+    color: #0078d7;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #0078d7;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.img-rounded {
+    width: 300px;  /* Define a largura da imagem */
+    height: 200px; /* Define a altura da imagem */
+    border-radius: 15px; /* Bordas arredondadas */
+    object-fit: cover;  /* Faz a imagem cobrir toda a área da caixa sem distorção */
+}
+
+/* Aplicativo - Recursos */
+.features-list {
+    list-style: disc;
+    margin: 20px auto;
+    padding-left: 40px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.features-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.download-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download-buttons .cta-btn {
+    padding: 12px 25px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-buttons .cta-btn:hover {
+    background-color: #005bb5;
+}
+
+/*Rodapé*/
+
+.footer{
+    margin-top: 100px;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer p {
+    font-size: 0.9em;
+}
+
+/*responsivo pc*/
+
+@media (max-width: 1440px) {
+
+    header {
+        width: 100%;
+    }
+
+    .product-details img {
+        width: 300px;
+    }
+    footer {
+        font-size: 12px; /* Reduz tamanho da fonte */
+        padding: 15px 0; /* Ajusta espaçamento */
+      }
+    }
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsividade Tablet */
+
+@media (max-width: 768px) {
+    .nav-list {
+        gap: 15px;
+    }
+
+    .product-grid {
+        gap: 20px;
+    }
+
+    .product-item {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+    }
+
+    .download-buttons .cta-btn {
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsivo Mobilie*/
+
+@media (max-width: 425px) {
+
+    header {
+        width: 100%;
+    }
+
+    .product-details img {
+        width: 300px;
+    }
+    footer {
+        font-size: 12px; /* Reduz tamanho da fonte */
+        padding: 15px 0; /* Ajusta espaçamento */
+      }
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 375px) {
+
+    .logo h1 {
+        font-size: 23px;
+    }
+
+    .product-details img {
+        width: 250px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 320px) {
+    .product-details img {
+        width: 230px;
+    }
+    .logo h1 {
+        font-size: 23px;
+    }
+
+    .product-details img {
+        width: 250px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}
