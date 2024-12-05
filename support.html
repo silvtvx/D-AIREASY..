@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'AIREASY - Atendimento Online</title>
+    <link rel="stylesheet" href="support.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">D'AIREASY</div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="store.html">Loja</a></li>
+                <li><a href="app.html">Aplicativo</a></li>
+                <li><a href="support.html">Atendimento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Atendimento Online</h1>
+        <p>Estamos aqui para ajudar! Envie sua dúvida ou utilize o nosso chatbot para respostas rápidas.</p>
+
+        <!-- Formulário de Contato -->
+        <section class="contact-form">
+            <h2>Envie sua Mensagem</h2>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Digite sua dúvida ou mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Chatbot -->
+        <section class="chatbot">
+            <h2>Chatbot</h2>
+            <div id="chat-window">
+                <div id="chat-messages"></div>
+                <div class="chat-input">
+                    <input type="text" id="user-input" placeholder="Digite sua pergunta...">
+                    <button id="send-btn">Enviar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 D'AIREASY - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="support.js"></script>
+</body>
+</html>
